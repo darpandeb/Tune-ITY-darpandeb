@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "category":"Romantic hits"
+    },
+    {
+        "id":2,
+        "category":"Popular pops"
+    },
+    {
+        "id":3,
+        "category":"Rolling rock"
+    },
+    {
+        "id":4,
+        "category":"Party swings"
+    }
+]
