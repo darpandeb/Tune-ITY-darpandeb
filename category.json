@@ -1,18 +1,22 @@
 [
     {
         "id":1,
-        "category":"Romantic hits"
+        "category":"Romance",
+        "image":"https://ibb.co/F4phvnz"
     },
     {
         "id":2,
-        "category":"Popular pops"
+        "category":"Pop",
+        "image":"https://ibb.co/7KnPPk8"
     },
     {
         "id":3,
-        "category":"Rolling rock"
+        "category":"Rock",
+        "image":"https://ibb.co/fSph8Xm"
     },
     {
         "id":4,
-        "category":"Party swings"
+        "category":"Party",
+        "image":"https://ibb.co/fDmJCdq"
     }
 ]
