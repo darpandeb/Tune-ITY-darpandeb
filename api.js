@@ -1,112 +1,56 @@
-const SpotifyWebApi = require('spotify-web-api-node');
-// import the spotify web api node module//
 var express = require('express');
 var app = express();
 var dotenv = require('dotenv');
-dotenv.config();
-const token = process.env.Oauthtoken;
-// token generated running authorization.js//
-//expires every one hour//
-// needs to be refreshed //
+var mongo = require('mongodb')
+var MongoClient=mongo.MongoClient;
+dotenv.config()
+var mongourl = process.env.MongoLiveUrl;
+var port = process.env.PORT || 3001;
+var db;
 
-const spotifyApi = new SpotifyWebApi();
-spotifyApi.setAccessToken(token);
-
-
-//  searh songs by track name //
-app.get('/trackname/:name', function (req, res) {
-    spotifyApi.searchTracks(req.params.name,{limit:2})
-    .then(function(data) {
-      res.send(data.body.tracks.items);
-    }, function(err) {
-    console.log(err);
-  });
-
-})
-// search songs by artist name //
-app.get('/artistname/:aname', function (req, res) {
-  spotifyApi.searchTracks(`artist:${req.params.aname}`,{limit:2})
-     .then(function(data) {
-      res.send(data.body.tracks.items);
-    }, 
-      function(err) {
-     console.log(err);
-  });
+app.get('/', function(req, res){
+    res.send("Welcome to the Tuneity Api");
 })
 
-// search an artist famous songs //
-app.get('/artisttoptracks/:artistid', function(req, res) {
-  spotifyApi.getArtistTopTracks(req.params.artistid, 'GB')
-  .then(function(data) {
-    res.send(data.body.tracks);
-    }, function(err) {
-    console.log('Something went wrong!', err);
-  });
+// Get a genre by name //
+app.get('/genre/:gname', function(req,res){
+    db.collection('genre').find({"category": req.params.gname}).toArray(function(err,result){
+        if(err) throw err;
+        res.send(result)
+    })
 })
-//sorting here is done on the basis of popularity key//
-
-//Arijit's ID = 4YRxDV8wJFPHPTeXepOstw //
-
-
-// search songs by playlist
-app.get('/playlist/:pname', function (req, res) {
-spotifyApi.searchPlaylists(req.params.pname)
-  .then(function(data) {
-    res.send(data.body);
-  }, function(err) {
-    console.log('Something went wrong!', err);
-  });
+// get songs wrt genre // 
+app.get('/songlist/:gname', function(req,res){
+    db.collection('songs').find({"genre": req.params.gname}).toArray(function(err,result){
+        if(err) throw err;
+        res.send(result)
+    })
 })
 
-// no point --> needs to redirect to spotify inorder to search tracks of the searched playlist//
-
-// search by trackname wrt artist ---------------------> doubt//
-app.get('/track/artist/:trackname/:artistname', function(req,res){
-  spotifyApi.searchTracks(`track:${req.params.trackname} artist:${req.params.artistname}`,{limit:2})
-  .then(function(data) {
-    res.send(data.body.tracks.items);
-  }, function(err) {
-    console.log('Something went wrong!', err);
-  });
+// get song details by id//
+app.get('/songdetails/:songid', function(req,res){
+    db.collection('songs').find({"id": req.params.songid}).toArray(function(err,result){
+        if(err) throw err;
+        res.send(result)
+    })
 })
+// get songs in genre sorted by year (latest ones first) //
+app.get('/latestsong/:genreid', function(req,res){
+    var sort={"year":-1}
+    db.collection('songs').find({"category_id": Number(req.params.genreid)}).sort(sort).toArray(function(err,result){
+        if(err) throw err;
+        res.send(result)
 
-// search track  audio features //
-app.get('/trackaudiofeatures/:trackid', function(req,res){
-  spotifyApi.getAudioFeaturesForTrack(req.params.trackid)
-  .then(function(data) {
-    res.send(data.body);
-  }, function(err) {
-      console.log(err);
-  });
-
-})
-
-
-//search track based on ids
-   
-
-
-app.get('/trackid/:tid', function (req, res) {
-  spotifyApi.searchTracks(`id:${req.params.id}`)
-     .then(function(data) {
-      res.send(data.body);}, 
-      function(err) {
-     console.log(err);
-  });
-
-})
-//tum ho id : 7uNnlVit5qDvfOje0pqICF
-
-
-app.listen(7000,function(){
-    console.log('listening on port 7000, go to localhost:7000')
+  })
 })
 
 
 
-
-
-
-
-
-
+// connection code//
+MongoClient.connect(mongourl,function(err,client) {
+    if(err) console.log("Unable to connect");
+    db=client.db('edureka')
+    app.listen(port, function(){
+        console.log(`Connected to port ${port}`)
+    })
+})

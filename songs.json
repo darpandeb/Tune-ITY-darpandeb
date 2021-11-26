@@ -2,201 +2,242 @@
     {
         "id":1,
         "category_id":1,
+        "genre":"Romance",
         "name": "Ranjha",
         "language":"Hindi",
         "artist":["Jasleen Royal","B Praak"],
         "cover_img": "https://ibb.co/Kx3jxLp",
         "album": "Shershaah",
-        "year":2021
+        "year":2021,
+        "link":"https://drive.google.com/uc?id=1hKKt-IozcjxaIqqdktnRhEBW0CmMe3UW"
+    
     },
     {
         "id":2,
         "category_id":1,
+        "genre":"Romance",
         "name": "Raatan Lambiyan",
         "language":"Hindi",
         "artist":["Jubin Nautiyal","Asees Kaur"],
         "cover_img": "https://ibb.co/xm95dSF",
         "album": "Shershaah",
-        "year":2021
+        "year":2021,
+        "link":"https://drive.google.com/uc?id=1omcYwW_AO51XErU3t9ErJjeltV-wN4h_"
     },
     {
         "id":3,
         "category_id":1,
         "name": "Shayad",
+        "genre":"Romance",
         "language":"Hindi",
         "artist":["Arijit Singh"],
         "cover_img": "https://ibb.co/wRV6fmf",
         "album": "Love Aaj Kal",
-        "year":2019
+        "year":2019,
+        "link":"https://drive.google.com/uc?id=1KYKf9qkvoRhSxGfJ8F_lyZpA8ZSJ3z-p"
     },
     {
         "id":4,
         "category_id":1,
-        "name": "Khairiyat",
+        "genre":"Romance",
+        "name": "Khairiyat(Happy)",
         "language":"Hindi",
         "artist":["Arijit Singh"],
         "cover_img": "https://ibb.co/tx7vGFF",
         "album": "Chhichhore",
-        "year":2019
+        "year":2019,
+        "link":"https://drive.google.com/uc?id=18bmPpCyuSJ0kr5rTCtbDGhzlOsen0S3r"
     },
     {
         "id":5,
         "category_id":1,
+        "genre":"Romance",
         "name": "Nazm Nazm",
         "language":"Hindi",
         "artist":["Arko Pravo Mukherjee"],
         "cover_img": "https://ibb.co/MD6R47k",
         "album": "Bareilly Ki Barfi",
-        "year":2017
+        "year":2017,
+        "link":"https://drive.google.com/uc?id=1LXtYU7gY24jNEwoiaf_jgsAmqHk_bTju"
     },
     {
         "id":6,
         "category_id":2,
+        "genre":"Pop",
         "name": "Perfect",
         "language":"English",
         "artist":["Ed Sheeran"],
         "cover_img": "https://ibb.co/JkZj86m",
         "album": "Divide",
-        "year":2017
+        "year":2017,
+        "link":"https://drive.google.com/uc?id=1aaxXMnuNdf_hGaWXxO9CtLjbrFsqvqyT"
     },
     {
         "id":7,
         "category_id":2,
+        "genre":"Pop",
         "name": "Watermelon Sugar",
         "language":"English",
         "artist":["Harry Styles"],
         "cover_img": "https://ibb.co/5KLcnTJ",
         "album": "Fine Line",
-        "year":2019
+        "year":2019,
+        "link":"https://drive.google.com/uc?id=1qhQUCgGsk1lYjuzTAofTMh-GDs4z3k1b"
     },
     {
         "id":8,
         "category_id":2,
+        "genre":"Pop",
         "name": "Closer",
         "language":"English",
         "artist":["The Chainsmokers"],
         "cover_img": "https://ibb.co/wdzcKZk",
         "album": "Collage",
-        "year":2019
+        "year":2019,
+        "link":"https://drive.google.com/uc?id=1h5PETWAnrNj2obW1dIQFM09gcYIvk5Z7"
     },
     {
         "id":9,
         "category_id":2,
+        "genre":"Pop",
         "name": "Uptown Funk",
         "language":"English",
         "artist":["Mark Ronson","Bruno Mars"],
         "cover_img": "https://ibb.co/93NjQRZ",
         "album": "Uptown Funk",
-        "year":2014
+        "year":2014,
+        "link":"https://drive.google.com/uc?id=1muAnmf3VqXzINCEs-v2y3JFPJcDk0Hut"
     },
     {
         "id":10,
         "category_id":2,
+        "genre":"Pop",
         "name": "Levitating",
         "language":"English",
         "artist":["Dua Lipa","DaBaby"],
         "cover_img": "https://ibb.co/rfPMWmF",
         "album": "Future Nostalgia",
-        "year":2020
+        "year":2020,
+        "link":"https://drive.google.com/uc?id=1bibJkQ58j-skXRIQXvbeWRB-Bvzl9JIy"
     },
     {
         "id":11,
         "category_id":3,
+        "genre": "Rock",
         "name": "Sweet Child O' Mine",
         "language":"English",
         "artist":["Guns N' Roses"],
         "cover_img": "https://ibb.co/XW38CYM",
         "album": "Appetite for Destruction",
-        "year":1987
+        "year":1987,
+        "link":"https://drive.google.com/uc?id=1Hh8fIJXgz0Fhl7X8jDL-pjE37614kynf"
     },
     {
         "id":12,
         "category_id":3,
+        "genre": "Rock",
         "name": "Smoke on the water",
         "language":"English",
         "artist":["Deep Purple"],
         "cover_img": "https://ibb.co/9rkzqjm",
         "album": "Machine Head",
-        "year":1972
+        "year":1972,
+        "link":"https://drive.google.com/uc?id=1G2zALEqYpJdsVbYkg6Jmir4pjmwZ41LD"
     },
     {
         "id":13,
         "category_id":3,
+        "genre": "Rock",
         "name": "You Shook Me All Night Long",
         "language":"English",
         "artist":["AC/DC"],
         "cover_img": "https://ibb.co/sbWm8n7",
         "album": "Live at Donington",
-        "year":1980
+        "year":1980,
+        "link":"https://drive.google.com/uc?id=1Mc0NTnH2aZXpk54WzPgMKK6xUBHHvZJt"
     },
     {
         "id":14,
         "category_id":3,
+        "genre": "Rock",
         "name": "21 Guns",
         "language":"English",
         "artist":["Green Day"],
         "cover_img": "https://ibb.co/gPRtDh1",
         "album": "21st Century Breakdown",
-        "year":2009
+        "year":2009,
+        "link":"https://drive.google.com/uc?id=1DYhGCR8NZKb_YVnyRu4q3_ySwaxNiSm7"
     },
     {
         "id":15,
         "category_id":3,
+        "genre": "Rock",
         "name": "Back in Black",
         "language":"English",
         "artist":["AC/DC"],
         "cover_img": "https://ibb.co/1mdXXM2",
         "album": "Studio Album by AC/DC",
-        "year":1980
+        "year":1980,
+        "link":"https://drive.google.com/uc?id=18BQ9nmwFYuS9INKOaK0pqyB0L0YyTgwc"
     },
     {
         "id":16,
         "category_id":4,
+        "genre":"Party",
         "name": "Dil Chori",
         "language":"Hindi",
         "artist":["Ishers","Yo Yo Honey Singh","Simran Kaur"],
         "cover_img": "https://ibb.co/Lp1ZDkM",
         "album": "Sonu ki Titu ki Sweety",
-        "year":2018
+        "year":2018,
+        "link":"https://drive.google.com/uc?id=1pUs_v6OMVrQgtqoGMKwP3ox0OVRX8tOK"
     },
     {
         "id":17,
         "category_id":4,
+        "genre":"Party",
         "name": "Abhi Toh Party Shuru Hui Hai",
         "language":"Hindi",
         "artist":["Badshah"],
         "cover_img": "https://ibb.co/MBPyfbs",
         "album": "Khoobsurat",
-        "year":2014
+        "year":2014,
+        "link":"https://drive.google.com/uc?id=1R1hx88z_oW3DjjKH9h-fqceFHmzCsKI4"
     },
     {
         "id":18,
         "category_id":4,
+        "genre":"Party",
         "name": "Tamma Tamma Again",
         "language":"Hindi",
         "artist":["Anuradha Paudwal","Bappi Lahiri","Badshah"],
         "cover_img": "https://ibb.co/DK2xZrf",
         "album": "Badrinath Ki Dulhania",
-        "year":2017
+        "year":2017,
+        "link":"https://drive.google.com/uc?id=1WHfhIsbVB6seoqNlreILBu2ve1jRNnMU"
     },
     {
         "id":19,
         "category_id":4,
+        "genre":"Party",
         "name": "Let's Nacho",
         "language":"Hindi",
         "artist":["Nucleya", "Benny Dayal", "Badshah"],
         "cover_img": "https://ibb.co/NNB0Yvp",
         "album": "Kapoor & Sons",
-        "year":2017
+        "year":2017,
+        "link":"https://drive.google.com/uc?id=11U8Zk6H4N8qkD-iL9hHppnwEunjdWccs"
     },
     {
         "id":20,
         "category_id":4,
+        "genre":"Party",
         "name": "The Breakup Song",
         "language":"Hindi",
         "artist":["Pritam Chakraborty"],
         "cover_img": "https://ibb.co/hRhKMcf",
         "album": "Ae Dil Hai Mushkil",
-        "year":2016
+        "year":2016,
+        "link":"https://drive.google.com/uc?id=18nsGBDZ7r7O384lzWeMzlEUS0MERLJIc"
     }
 ]
